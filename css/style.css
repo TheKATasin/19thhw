@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style-type: none;
+}
+/* common css end */
+.slider{
+    position: relative;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 354px 0;
+    text-align: center;
+}
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.one{
+    background: url(../images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.two{
+    background: url(../images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.three{
+    background: url(../images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.four{
+    background: url(../images/4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.five{
+    background: url(../images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+    z-index: 999;
+    transition: 0.3s;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+    z-index: 999;
+    transition: 0.3s;
+}
+.prev:hover{
+    color: gray;
+    font-size: 50px;
+}
+.next:hover{
+    color: gray;
+    font-size: 50px;
+}
+.slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slick-dots button{
+    text-indent: -9999px;
+    height: 4px;
+    width: 30px;
+    border: 0;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+li.slick-active button{
+    background: gray;
+    width: 35px;
+    height: 5px;
+    transition: 0.3s;
+}
